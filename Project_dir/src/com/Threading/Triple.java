@@ -23,7 +23,7 @@ public class Triple implements Runnable {
 		{
 			for(int i=0; i<10; i++) 
 			{
-				System.out.println("\tPing");
+				System.out.println("Ping");
 		try {
 			Thread.sleep(500);
 			}
@@ -35,7 +35,7 @@ public class Triple implements Runnable {
 		if(curr.getName().equals("Pong"))
 		{
 			for(int i=0; i<10; i++) {
-				System.out.print("\tPong");
+				System.out.println("\tPong");
 			try {
 				Thread.sleep(500);
 			}
@@ -47,7 +47,7 @@ public class Triple implements Runnable {
 		if(curr.getName().equals("Tom"))
 		{
 			for(;;) {
-				System.out.println("\tTom");
+				System.out.println("\t\tTom");
 		try {
 			Thread.sleep(500);
 			}

@@ -13,6 +13,7 @@ public class JdbcEx1 {
 		PreparedStatement st=dbcon1.prepareStatement("Insert into mytable values(?,?)");
 		st.setString(1, "JKL");
 		st.setInt(2, 86375241);
+		@SuppressWarnings("unused")
 		int i=st.executeUpdate();
 		st.setString(1, "MNO");
 		st.setInt(2, 86745132);
