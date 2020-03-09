@@ -34,7 +34,7 @@ public class StreamsTest {
 		List<Transaction> lt = TestData.getAllTransactions();
 		lt.stream().filter(tr -> tr.getYear() == 2011).sorted(Comparator.comparing(Transaction::getValue))
 				.map(tr -> tr.getTrader() + " " + tr.getValue()).forEach(System.out::println);
-		// Question 8
+		
 
 	}
 
