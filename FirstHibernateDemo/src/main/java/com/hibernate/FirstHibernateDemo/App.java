@@ -1,5 +1,4 @@
 package com.hibernate.FirstHibernateDemo;
-
 import java.util.List;
 
 import org.hibernate.Query;
@@ -40,7 +39,7 @@ public class App {
 		System.out.println("Created product id:" + productId);
 	}
 
-	public static List<Product> getAllProduct(SessionFactory sessionFactory) {
+	public static List<Product> getAllProducts(SessionFactory sessionFactory) {
 		Session session = sessionFactory.openSession();
 		Query query = session.createQuery("from Product");
 		List<Product> productList = query.list();
@@ -53,6 +52,6 @@ public class App {
 		configuration.configure("hibernate.cfg.xml");
 		SessionFactory sessionFactory = configuration.buildSessionFactory();
 		insert(sessionFactory);
+		System.out.println(getAllProducts(sessionFactory));
 	}
-
 }
