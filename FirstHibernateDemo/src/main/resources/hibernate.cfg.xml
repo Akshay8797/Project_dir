@@ -17,5 +17,6 @@
 		<!-- validate | update | create | create-drop -->
 
 		<mapping class="com.hibernate.FirstHibernateDemo.Product"/>
+		<mapping class="com.hibernate.FirstHibernateDemo.Employee"/>
 </session-factory>
 </hibernate-configuration>

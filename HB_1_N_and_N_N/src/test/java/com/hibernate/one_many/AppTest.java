@@ -1,4 +1,4 @@
-package com.hibernate.FirstHibernateDemo;
+package com.hibernate.one_many;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
