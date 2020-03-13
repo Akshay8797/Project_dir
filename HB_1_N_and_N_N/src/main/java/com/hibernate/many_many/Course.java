@@ -14,15 +14,16 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="COURSE")
+@Table(name = "COURSE")
 public class Course {
 
 	private long courseId;
 	private String courseName;
 	private Set<Student> students = new HashSet<Student>();
 
-	public Course() {}
-	
+	public Course() {
+	}
+
 	public Course(String courseName) {
 		this.courseName = courseName;
 	}
@@ -34,7 +35,7 @@ public class Course {
 
 	@Id
 	@GeneratedValue
-	@Column(name="COURSE_ID")
+	@Column(name = "COURSE_ID")
 	public long getCourseId() {
 		return this.courseId;
 	}
@@ -43,7 +44,7 @@ public class Course {
 		this.courseId = courseId;
 	}
 
-	@Column(name="COURSE_NAME", nullable=false)
+	@Column(name = "COURSE_NAME", nullable = false)
 	public String getCourseName() {
 		return this.courseName;
 	}
@@ -51,11 +52,10 @@ public class Course {
 	public void setCourseName(String courseName) {
 		this.courseName = courseName;
 	}
-	
+
 	@ManyToMany(cascade = CascadeType.ALL)
-	@JoinTable(name = "STUDENT_COURSE", 
-				joinColumns = { @JoinColumn(name = "COURSE_ID") }, 
-				inverseJoinColumns = { @JoinColumn(name = "STUDENT_ID") })
+	@JoinTable(name = "STUDENT_COURSE", joinColumns = { @JoinColumn(name = "COURSE_ID") }, inverseJoinColumns = {
+			@JoinColumn(name = "STUDENT_ID") })
 	public Set<Student> getStudents() {
 		return students;
 	}

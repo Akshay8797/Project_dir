@@ -25,6 +25,9 @@
 		<mapping class="com.hibernate.one_many.Profile" />
 		<mapping class="com.hibernate.one_many.Question" />
 		<mapping class="com.hibernate.one_many.Answer" />
+		<mapping class="com.hibernate.one_many.Stock"/>
+		<mapping class="com.hibernate.one_many.Market"/>
+		<mapping class="com.hibernate.one_many.MarketStock"/>
 	</session-factory>
 	<!-- <session-factory> <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property> 
 		<property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property> 
