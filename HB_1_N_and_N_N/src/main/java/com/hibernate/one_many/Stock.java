@@ -22,8 +22,8 @@ public class Stock {
 	@Column(name = "name")
 	private String sname;
 
-	@ManyToOne(cascade=CascadeType.PERSIST, fetch=FetchType.LAZY)
-	@JoinColumn(name="market_id")
+	@ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
+	@JoinColumn(name = "market_id")
 	private Market market;
 
 	public Stock(String sname) {
