@@ -28,7 +28,7 @@ public class CRUD_Operations {
 	public static void main(String[] args) throws Exception {
 
 		Configuration configuration = new Configuration();
-		configuration.configure(new File("src/hibernate.cfg.xml"));
+		configuration.configure("hibernate.cfg.xml");
 
 		SessionFactory sessionFactory = configuration.buildSessionFactory();
 
