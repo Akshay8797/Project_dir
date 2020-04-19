@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Advertisement :: Profile</title>
+<link rel="stylesheet" href="CSS/bootstrap-grid.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap-grid.min.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap-reboot.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap-reboot.min.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap.min.css"></link>
+<link rel="stylesheet" href="CSS/style.css"></link>
+<script src="JS/bootstrap.bundle.js"></script>
+<script src="JS/bootstrap.bundle.min.js"></script>
+<script src="JS/bootstrap.js"></script>
+<script src="JS/bootstrap.min.js"></script>
+<script src="JS/script.js"></script>
+</head>
+<body>
+	<div class="topnav">
+		<a class="active" href="Index.html">Home</a> <a href="About.html">About</a>
+		<a href="Profile.html">Profile</a> <a href="Index.html">Logout</a>
+		<form class="form-inline searchBar">
+			<input class="form-control" type="search" placeholder="Search"
+				aria-label="Search">
+			<button class="btn btn-outline-success" type="submit">Search</button>
+		</form>
+	</div>
+	<div class="container">
+		<br>
+		<h1 class="text-center">Online Advertisement Application</h1>
+		<br> <br>
+		<div class="row">
+			<div class="leftDiv">
+				<br>
+				<h2>Your Profile</h2>
+			</div>
+			<div class="rightDiv">
+				<img src="Img/User.png" alt="UserIcon" height="100em" width="100em">
+			</div>
+		</div>
+		<form id="profileForm">
+			<div class="form-group conatiner">
+				<label for="pName">AK</label> <input type="text"
+					class="form-control" id="pName" placeholder="Akshay Kumar"
+					name="pName" disabled> <label for="pPhone">Name: </label> <input
+					type="number" class="form-control" id="pPhone"
+					placeholder="123456789" name="pPhone" disabled> <label
+					for="pMail">Name: </label> <input type="text" class="form-control"
+					id="pMail" placeholder="akshay@mail.com" name="pMail" disabled>
+			</div>
+			<br> <br> <br>
+			<div id="button">
+				<button type="button" class="btn btn-warning"
+					onclick="document.location='User.html'">Back</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

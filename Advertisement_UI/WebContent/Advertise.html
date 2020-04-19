@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Advertisement :: New Ad</title>
+<link rel="stylesheet" href="CSS/bootstrap-grid.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap-grid.min.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap-reboot.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap-reboot.min.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap.min.css"></link>
+<link rel="stylesheet" href="CSS/style.css"></link>
+<script src="JS/bootstrap.bundle.js"></script>
+<script src="JS/bootstrap.bundle.min.js"></script>
+<script src="JS/bootstrap.js"></script>
+<script src="JS/bootstrap.min.js"></script>
+<script src="JS/script.js"></script>
+</head>
+<body>
+	<div class="topnav">
+		<a class="active" href="Index.html">Home</a> <a href="About.html">About</a>
+		<a href="Profile.html">Profile</a> <a href="Index.html">Logout</a>
+		<form class="form-inline searchBar">
+			<input class="form-control" type="search" placeholder="Search"
+				aria-label="Search">
+			<button class="btn btn-outline-success" type="submit">Search</button>
+		</form>
+	</div>
+	<div class="container">
+		<br>
+		<h1 class="text-center">Online Advertisement Application</h1>
+		<br> <br>
+		<h2>Create New Advertisement</h2>
+		<br>
+		<form id="createForm" class="needs-validation" novalidate
+			method="post" onsubmit="return createFunction();">
+			<div class="form-group">
+				<label for="sellerName">Enter Your Name: </label> <input type="text"
+					class="form-control" id="sellerName"
+					placeholder="Enter Your Name (Other Buyer's would see this Name)"
+					name="sellerName" required>
+				<div class="invalid-feedback">Please Provide Your Name</div>
+			</div>
+			<div class="form-group">
+				<label for="sellerPhone">Enter Your Mobile Number: </label> <input
+					type="number" class="form-control" id="sellerPhone"
+					placeholder="Enter Your Phone (Other Buyer's would see this Mobile Number)"
+					name="sellerPhone" required>
+				<div class="invalid-feedback">Please Provide Your Phone</div>
+			</div>
+
+			<div class="form-group">
+				<label for="productType">Enter Your Product's Category: </label> <select
+					class="form-control" id="productType">
+					<option>SmartPhones and Gadgets</option>
+					<option>TV and Home Appliances</option>
+					<option>Cars and Bikes</option>
+					<option>Furniture and Home Essentials</option>
+					<option>Others</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="prodName">Enter Your Product's Name: </label> <input
+					type="text" class="form-control" id="prodName"
+					placeholder="Enter Product Name" name="prodName" required>
+				<div class="invalid-feedback">Please Provide Product Name</div>
+			</div>
+			<div class="form-group">
+				<label for="prodPrice">Enter Your Product's Selling Price: </label>
+				<input type="number" class="form-control" id="prodPrice"
+					placeholder="Enter Product's Estimated Selling Price"
+					name="prodPrice" required>
+				<div class="invalid-feedback">Please Provide Product Price</div>
+			</div>
+			<div class="form-group">
+				<label for="prodDesc">Enter Your Product's Description: </label> <input
+					type="text" class="form-control" id="prodDesc"
+					placeholder="Enter Product's Discription and Other Relevant Details"
+					name="prodDesc" required>
+				<div class="invalid-feedback">Please Provide Product Price</div>
+			</div>
+			<label for="prodNeg">Is Price Negotiable: </label>
+			<div class="form-group ml-4">
+				<input class="form-check-input" type="radio" name="priceRadio"
+					id="priceRadio" value="Yes" checked> <label
+					class="form-check-label" for="priceRadio"> Yes </label>
+			</div>
+			<div class="form-group ml-4">
+				<input class="form-check-input" type="radio" name="priceRadio"
+					id="priceRadio2" value="No"> <label
+					class="form-check-label" for="priceRadio2"> No </label>
+			</div>
+			<div class="form-group form-check">
+				<input class="form-check-input" type="checkbox" id="invalidCheck"
+					required> <label class="form-check-label"
+					for="invalidCheck">I Declare that the Above Information is
+					Correct to the best of My Knowledge </label>
+				<div class="invalid-feedback">Please Agree to the Declaration
+				</div>
+			</div>
+			<br> <br> <br>
+			<div id="button">
+				<button type="submit" class="btn btn-primary needs-validation">Post</button>
+				&emsp;&emsp;&emsp;
+				<button type="button" class="btn btn-warning"
+					onclick="document.location='User.html'">Back</button>
+			</div>
+			<br> <br> <br>
+		</form>
+	</div>
+</body>
+</html>

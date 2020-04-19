@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Advertisement :: About</title>
+<link rel="stylesheet" href="CSS/bootstrap-grid.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap-grid.min.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap-reboot.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap-reboot.min.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap.min.css"></link>
+<link rel="stylesheet" href="CSS/style.css"></link>
+<script src="JS/bootstrap.bundle.js"></script>
+<script src="JS/bootstrap.bundle.min.js"></script>
+<script src="JS/bootstrap.js"></script>
+<script src="JS/bootstrap.min.js"></script>
+<script src="JS/script.js"></script>
+</head>
+<body>
+	<div class="topnav">
+		<a class="active" href="Index.html">Home</a> <a href="About.html">About</a>
+		<a href="Profile.html">Profile</a> <a href="Index.html">Logout</a>
+		<form class="form-inline searchBar">
+			<input class="form-control" type="search" placeholder="Search"
+				aria-label="Search">
+			<button class="btn btn-outline-success" type="submit">Search</button>
+		</form>
+	</div>
+	<div class="container">
+		<br>
+		<h1 class="text-center">Online Advertisement Application</h1>
+		<br> <br>
+		<h2>User Info:</h2>
+		<br> <br>
+		<table class="table table-bordered table-hover">
+			<thead class="thead-dark">
+				<tr>
+					<th>Ad Id</th>
+					<th>Product Category</th>
+					<th>Product Name</th>
+					<th>Status</th>
+					<th>Price</th>
+					<th>Description</th>
+					<th>Negotiable</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>101</td>
+					<td>SmartPhones and Gadgets</td>
+					<td>Sony Camera</td>
+					<td>Active</td>
+					<td>15000</td>
+					<td>2011 Purchased, Good Condition</td>
+					<td>Yes</td>
+				</tr>
+				<tr>
+					<td>102</td>
+					<td>TV and Home Appliances</td>
+					<td>Mi TV 4A</td>
+					<td>Active</td>
+					<td>20000</td>
+					<td>2015 Purchased, 55" Full Led TV</td>
+					<td>No</td>
+				</tr>
+				<tr>
+					<td>103</td>
+					<td>TV and Home Appliances</td>
+					<td>Samsung Smart AC</td>
+					<td>Purchased</td>
+					<td>12000</td>
+					<td>2010 Purchased, 2-Ton Good Condition</td>
+					<td>Yes</td>
+				</tr>
+				<tr>
+					<td>104</td>
+					<td>SmartPhones and Gadgets</td>
+					<td>Redmi Note 7 Pro</td>
+					<td>Active</td>
+					<td>7000</td>
+					<td>2019 Purchased, Nice Condition With Bill</td>
+					<td>No</td>
+				</tr>
+				<tr>
+					<td>105</td>
+					<td>Cars and Bikes</td>
+					<td>Hyundai I20</td>
+					<td>Active</td>
+					<td>350000</td>
+					<td>2013 Purchased, Petrol Variant</td>
+					<td>Yes</td>
+				</tr>
+			</tbody>
+		</table>
+		<br> <br> <br>
+		<div id="button">
+			<button type="button" class="btn btn-primary"
+				onclick="document.location='Advertise.html'">Create New
+				Advertisement</button>
+			&emsp;&emsp;&emsp;
+			<button type="button" class="btn btn-success"
+				onclick="document.location='UpdateAd.html'">Update an
+				Existing AD</button>
+			&emsp;&emsp;&emsp;
+			<button type="button" class="btn btn-info"
+				onclick="document.location='Message.html'">Send Message</button>
+			&emsp;&emsp;&emsp;
+			<button type="button" class="btn btn-danger"
+				onclick="document.location='DeleteAd.html'">Delete an
+				Existing AD</button>
+		</div>
+		<br> <br> <br>
+	</div>
+</body>
+</html>

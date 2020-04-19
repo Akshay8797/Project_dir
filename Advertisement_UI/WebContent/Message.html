@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Advertisement :: Contact</title>
+<link rel="stylesheet" href="CSS/bootstrap-grid.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap-grid.min.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap-reboot.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap-reboot.min.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap.css"></link>
+<link rel="stylesheet" href="CSS/bootstrap.min.css"></link>
+<link rel="stylesheet" href="CSS/style.css"></link>
+<script src="JS/bootstrap.bundle.js"></script>
+<script src="JS/bootstrap.bundle.min.js"></script>
+<script src="JS/bootstrap.js"></script>
+<script src="JS/bootstrap.min.js"></script>
+<script src="JS/script.js"></script>
+</head>
+<body>
+	<div class="topnav">
+		<a class="active" href="Index.html">Home</a> <a href="About.html">About</a>
+		<a href="Profile.html">Profile</a> <a href="Index.html">Logout</a>
+		<form class="form-inline searchBar">
+			<input class="form-control" type="search" placeholder="Search"
+				aria-label="Search">
+			<button class="btn btn-outline-success" type="submit">Search</button>
+		</form>
+	</div>
+	<div class="container">
+		<br>
+		<h1 class="text-center">Online Advertisement Application</h1>
+		<br> <br>
+		<h2>Send Message</h2>
+		<form id="messageForm" class="needs-validation" novalidate
+			method="post" onsubmit="messageFunction()">
+			<div class="form-group">
+				<label for="msgMail1">Enter Your Primary Email: </label> <input
+					type="email" class="form-control" id="email1"
+					placeholder="Enter Primary Email" name="msgMail1" required>
+				<div class="invalid-feedback">Please Provide Primary E-Mail Id</div>
+			</div>
+			<div class="form-group">
+				<label for="msgMail2">Enter Your Secondary Email: </label> <input
+					type="email" class="form-control" id="email2"
+					placeholder="Enter Secondary Email (Optional)" name="msgMail2">
+			</div>
+			<div class="form-group">
+				<label for="contact">Enter Mobile Number: </label> <input
+					type="number" class="form-control" id="contact"
+					placeholder="Enter Mobile Number" name="contact" required>
+				<div class="invalid-feedback">Please Provide Mobile Number</div>
+			</div>
+			<div class="form-group">
+				<label for="msgBody">Enter Your Message: </label> <input type="text"
+					class="form-control" id="msgBody" placeholder="Enter Your Message"
+					name="msgBody" required>
+				<div class="invalid-feedback">Please Provide Your Message</div>
+			</div>
+			<br> <br> <br>
+			<div id="button">
+				<button type="submit" class="btn btn-primary needs-validation">Send</button>
+				&emsp;&emsp;&emsp;
+				<button type="button" class="btn btn-warning"
+					onclick="document.location='User.html'">Back</button>
+			</div>
+			<br> <br> <br>
+		</form>
+	</div>
+</body>
+</html>
